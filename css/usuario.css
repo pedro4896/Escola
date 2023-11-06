@@ -1,0 +1,164 @@
+/*Reset*/
+*{
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+}
+a,button{
+	cursor: pointer;
+}
+
+body{
+	display: grid;
+	place-items: center;
+	margin: 0;
+	padding: 0 24px;
+    background-image: url("../imagens/nuvens.JPG");
+    background-size: cover;
+    background-repeat: repeat;
+}
+@media (width >= 500px){
+	body{
+		padding: 0;
+	}
+}
+
+.cadastro-card{
+	width: 100%;
+	padding: 20px 30px 44px;
+	border-radius: 24px;
+	background: #013c72;
+	text-align: center;
+	box-shadow: 4px 4px 4px #050609;
+}
+@media (width >= 500px){
+	.cadastro-card{
+		margin: 30px;
+		width: 800px;
+	}
+}
+
+.cadastro-card > h2{
+	margin: 0 0 12px;
+	font-size: 36px;
+	font-weight: 600;
+	color: white;
+}
+
+.cadastro-card > h3{
+	margin: 0 0 30px;
+	font-weight: 500;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.38);
+}
+
+.cadastro-form{
+	width: 100%;
+	margin: 0;
+	display: grid;
+	gap: 16px;
+	color: white;
+}
+
+.cadastro-form > a{
+	color: #216ce7;
+	text-decoration: none;
+}
+
+.cadastro-form > input, .cadastro-form >button{
+	width: 100%;
+	height: 56px;
+	padding: 0 16px;
+	border-radius: 8px;
+}
+
+.cadastro-form > input{
+	border: 2px solid #050609;
+	background-color: #5092BA;
+}
+
+input::placeholder{
+	color: black;
+}
+
+.cadastro-form > button{
+	border: 0;
+	background: #216ce7;
+	color: #f9f9f9;
+	font-weight: 600;
+	box-shadow: 4px 4px #050609;
+}
+
+.cadastro-form > button:hover{
+	transform: translate(2px, 2px);
+	box-shadow: 2px 2px #050609;
+}
+
+input[type=radio] {
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+
+input[type=radio]:before{
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+	left: 0;
+	background-color: #000080;
+}
+
+input[type=radio]:checked:after{
+	content: " ";
+	display: block;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0px 3px 3px 0px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	position: absolute;
+	top: 5px;
+	left: 9px;
+}
+
+label{
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+span{
+	margin: 0px 10px;
+	padding-left: 5px;
+	padding-top: 15px;
+}
+
+p{
+	text-align: left;
+	display: inline-flex;
+	align-items: center;
+}
+
+#encerrar{
+	margin: auto;
+	width: 90%;
+	text-align: right;
+	padding: 20px;
+}
+#encerrar a{
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#encerrar img{
+    height: 37px;
+}
